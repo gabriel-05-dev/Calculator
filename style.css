@@ -1,0 +1,37 @@
+.calculator {
+    border: solid black 1px;
+    height: 400px;
+    width: 300px;
+}
+.display {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 300px;
+    border: solid black 1px;
+}
+.output {
+    margin-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.button {
+    height: 65px;
+    width: 70px;
+}
+
+.AC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+.clear {
+    height: 25px;
+    width: 200px;
+}
