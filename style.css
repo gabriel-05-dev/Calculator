@@ -1,22 +1,39 @@
 .calcBody {
+    align-items: center;
     height: 400px;
     width: 300px;
     border: solid 1px black;
 }
 
 .display {
+    display: flex;
+    justify-content: flex-end;
     height: 50px;
     width: 300px;
     border: solid 1px black;
 }
 
+.displayContent {
+    padding-right: 30px;
+}
 button {
     height: 60px;
     width: 60px;
-    margin: 5px;
+    margin: 6px;
 }
 
 .clear {
     height: 50px;
-    width: 280px;
+    width: 290px;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.row {
+    align-items: center;
 }
