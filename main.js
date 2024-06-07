@@ -65,9 +65,9 @@ function operate(parsedVal1, value2, operator) {
   value1 = parsedVal1;
   value2 = parseFloat(value2);
 //checks to see which operator has been chosen by using the 'innertext' method.
-  if (operator.innerText ==='*') {
+  if (operator.innerText ==='×') {
     value1 = (value1 * value2);
-  } else if (operator.innerText ==='/') {
+  } else if (operator.innerText ==='÷') {
     value1 = (value1/value2);
   } else if (operator.innerText ==='-') {
     value1 = (value1-value2);
