@@ -15,11 +15,9 @@ numbers.forEach(function(button) {
       if (valEntered == false) {
        value1 += (button.innerText);
        display.innerText += button.innerText;
-       console.log(value1);
       } else if (valEntered == true) { //Verify previous value has been entered
         value2 += (button.innerText);
         display.innerText += (button.innerText); // Updates the text for the display.
-        console.log(value2);
       }
     });
   });
@@ -36,7 +34,6 @@ operators.forEach(function(operator) { //adds event listeneres for the operators
     value2 = 0;
     //create event listener for value2
     operatorVal = operator; //set operator to operator chosen and log it/
-    console.log(operatorVal);
       });
     });
 
