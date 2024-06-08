@@ -1,0 +1,1 @@
+This project is a calculator, it doesnt use an Eval function. The caluclator can handle decimals and rounds to 3.dp. 
