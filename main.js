@@ -64,12 +64,25 @@ function operate(parsedVal1, value2, operator) {
 //checks to see which operator has been chosen by using the 'innertext' method.
   if (operator.innerText ==='×') {
     value1 = (value1 * value2);
-  } else if (operator.innerText ==='÷') {
+  } else if (operator.innerText ==='÷' && value2 != 0) {
     value1 = (value1/value2);
   } else if (operator.innerText ==='-') {
     value1 = (value1-value2);
   } else if (operator.innerText ==='+') {
-    value1 = (value1+value2);}
+    value1 = (value1+value2);
+  } else if (operator.innerText ==='÷' && value2 === 0) {
+    invalidInput();
+  };
+//handles the division by 0 event.
+  if (display.innerText != 'division by 0 invalid') {
+  display.innerText = +value1.toFixed(3);
+  value2 = 0;
+  } else {
+    setTimeout(() => { clearCalculator()}, 1500);
+  }
 //set display to value calculated and set value2 to zero for new input.
-  display.innerText = value1;
-  value2 = 0;};
+  };
+//sets display text to invalid
+  function invalidInput() {
+    display.innerText = 'division by 0 invalid';
+  };

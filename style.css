@@ -9,6 +9,7 @@
     background-color: white;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
     height: 48px;
     width: 298px;
     border: solid 1px #000000;
@@ -31,6 +32,7 @@
     font-family: monospace;
     color: black;
     padding-right: 30px;
+    overflow:scroll;
 }
 
 button {
