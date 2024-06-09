@@ -77,6 +77,10 @@ function minus(value1, value2) {
 function addition(value1,value2) {
   return (value1+value2)
 }
+//sets display text to invalid
+function invalidInput() {
+  display.innerText = 'division by 0 invalid';
+};
 //checks to see which operator has been chosen by using the 'innertext' method.
   if (operator.innerText ==='×') {
     value1 = multiply(value1, value2);
@@ -95,10 +99,5 @@ function addition(value1,value2) {
   value2 = 0;
   } else {
     setTimeout(() => { clearCalculator()}, 1500);
-  }
-//set display to value calculated and set value2 to zero for new input.
-  };
-//sets display text to invalid
-  function invalidInput() {
-    display.innerText = 'division by 0 invalid';
-  };
+  }};
+//set display to value calculated and set value2 to zero for new input
