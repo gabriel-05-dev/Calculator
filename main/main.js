@@ -61,15 +61,31 @@ function clearCalculator() {
 function operate(parsedVal1, value2, operator) {
   value1 = parsedVal1;
   value2 = parseFloat(value2);
+
+function multiply(value1, value2) {
+  return (value1 * value2);
+};
+
+function divide(value1,value2){
+  return (value1/value2);
+};
+
+function minus(value1, value2) {
+  return (value1-value2)
+};
+
+function addition(value1,value2) {
+  return (value1+value2)
+}
 //checks to see which operator has been chosen by using the 'innertext' method.
   if (operator.innerText ==='×') {
-    value1 = (value1 * value2);
+    value1 = multiply(value1, value2);
   } else if (operator.innerText ==='÷' && value2 != 0) {
-    value1 = (value1/value2);
+    value1 = divide(value1,value2);
   } else if (operator.innerText ==='-') {
-    value1 = (value1-value2);
+    value1 = minus(value1,value2);
   } else if (operator.innerText ==='+') {
-    value1 = (value1+value2);
+    value1 = addition(value1,value2);
   } else if (operator.innerText ==='÷' && value2 === 0) {
     invalidInput();
   };
