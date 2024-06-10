@@ -5,6 +5,13 @@
     border-radius: 5px;
 }
 
+p {
+    font-family: "PT Sans";
+}
+
+li {
+    font-family: "PT Sans";
+}
 .display {
     background-color: white;
     display: flex;
